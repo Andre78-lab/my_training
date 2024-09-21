@@ -1,7 +1,7 @@
 number_dz = 12
 number_dz_h = 1.5
 course_name = "Python"
-time_1_dz = 1.5 / 12
+time_1_dz = number_dz_h / number_dz
 hours_n = int(time_1_dz)
 minutes_dr = (time_1_dz-hours_n)*60
 minutes_n = int(minutes_dr)
