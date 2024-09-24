@@ -2,7 +2,8 @@ immutable_var = (12345, 456.25, "Python", True, [3, 2.5, "str", False])
 print("Кортеж -",immutable_var)
 #immutable_var[0] = 54321    #- изменить нельзя, не изменяемый элемент кортежа
 #immutable_var[1] = 54321    #- изменить нельзя, не изменяемый элемент кортежа
-immutable_var[4][3] = True   #- изменить можно изменяемый элемент кортежа
+immutable_var[4][3] = True   #- изменить можно внутри изменяемого элемента кортежа
+print("Кортеж -",immutable_var)
 
 mutable_list = [12345, 456.25, "Python", True, [3, 2.5, "str", False]]
 print("Список до -", mutable_list)
