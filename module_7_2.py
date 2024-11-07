@@ -1,6 +1,4 @@
-from pprint import pprint
 
-from encodings.utf_7 import encode
 
 
 def custom_write(file_name, strings):
