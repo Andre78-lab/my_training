@@ -3,6 +3,8 @@ def type_str(n):
         return str(n)
     elif type(n) == str:
         return n
+    else:
+        return ""
 
 def add_everything_up(a, b):
     try:
