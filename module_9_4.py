@@ -9,10 +9,10 @@ print(list(map(lambda x, y: x == y, first, second)))
 #Замыкание--------------------------------------------------
 def get_advanced_writer(file_name):
     def write_everything(*data_set):
-        file = open(file_name, 'a', encoding='utf-8')
-        for line in data_set:
-            file.write(str(line) + '\n')
-        file.close()
+        with open(file_name, 'a', encoding='utf-8') as file:
+            for line in data_set:
+                file.write(str(line) + '\n')
+
 
     return write_everything
 
