@@ -14,7 +14,7 @@ write_words(200, 'example3.txt')
 write_words(100, 'example4.txt')
 current_time_finish1 = time.time()
 working_time1 = round(current_time_finish1-current_time_start1)
-print(f'Работа потоков: {time.strftime("%H:%M:%S", time.gmtime(working_time1))}')
+print(f'Работа функций: {time.strftime("%H:%M:%S", time.gmtime(working_time1))}')
 
 current_time_start2 = time.time()
 thread1 = threading.Thread(target=write_words, args=(10, 'example5.txt'))
